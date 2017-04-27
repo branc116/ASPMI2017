@@ -18,7 +18,7 @@ void copyList(atom* glava, atom** nova){
         return;
     }
     trenutni->broj = glava->broj;
-    sl = malloc(sizeof(sizeof(atom**)));
+    sl = malloc(sizeof(atom**));
     copyList(glava->slijedeci, sl);
     trenutni->slijedeci = *sl;
     *nova = trenutni;
